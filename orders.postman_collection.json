@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "ca604167-4062-4a3f-b538-25efb28a3adb",
+		"name": "orders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllOrder",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcklkIjoiY2VmNmZlMGMtMGFhMy00YmJkLWFmZTMtMWUzYzRmYjgyNDk0IiwiaWF0IjoxNzA1NzQ2ODcyLCJleHAiOjE3MDU3NTA0NzJ9.Jf-mkeXblLhWa6yOF4_GAZJ5wAXMY6MxWG3i40MepU4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:1000/order/api/getAllOrders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"order",
+						"api",
+						"getAllOrders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOrderById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcklkIjoiY2VmNmZlMGMtMGFhMy00YmJkLWFmZTMtMWUzYzRmYjgyNDk0IiwiaWF0IjoxNzA1NzQ2ODcyLCJleHAiOjE3MDU3NTA0NzJ9.Jf-mkeXblLhWa6yOF4_GAZJ5wAXMY6MxWG3i40MepU4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:1000/order/api/orders/f9775018-4e65-4ca5-9d59-cd54c4ba19f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"order",
+						"api",
+						"orders",
+						"f9775018-4e65-4ca5-9d59-cd54c4ba19f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

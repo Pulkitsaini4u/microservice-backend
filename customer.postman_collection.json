@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "76a443ab-cdad-49d2-9eb5-7c8fe9dc5556",
+		"name": "customer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "registerCustomer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"dummyUser123\",\r\n  \"password\": \"dummyPassword123\",\r\n  \"email\": \"dummy@example.com\",\r\n  \"phoneNumber\": \"+1234567890\",\r\n  \"address\": \"123 Main Street, Cityville\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1000/customer/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"customer",
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customerLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"dummyUser123\",\r\n  \"password\": \"dummyPassword123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1000/customer/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"customer",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customerProfile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcklkIjoiZjY2NzY0NjctNDg4NC00NmY5LTgyYzUtMDVlMDVkODIzZWZiIiwiaWF0IjoxNzA1Njg4NjY2LCJleHAiOjE3MDU2OTIyNjZ9.WrAqtdUfjIMRPIydEFb-zLAhfTXRkPodAJC_ny25q1A",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:1000/customer/api/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"customer",
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addProductsToCart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcklkIjoiY2VmNmZlMGMtMGFhMy00YmJkLWFmZTMtMWUzYzRmYjgyNDk0IiwiaWF0IjoxNzA1NzQ2ODcyLCJleHAiOjE3MDU3NTA0NzJ9.Jf-mkeXblLhWa6yOF4_GAZJ5wAXMY6MxWG3i40MepU4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productId\": \"65ab503cb41ccb98d6b8170f\",\r\n  \"quantity\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1000/customer/api/addProductToCart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"customer",
+						"api",
+						"addProductToCart"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

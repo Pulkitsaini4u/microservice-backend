@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "e7bd8954-d0d8-4081-aa74-2e39703ee71e",
+		"name": "product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Dummy Product\",\r\n  \"description\": \"This is a dummy product for testing purposes.\",\r\n  \"price\": 19.99,\r\n  \"stock\": 100\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1000/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllProducts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Dummy Product\",\r\n  \"description\": \"This is a dummy product for testing purposes.\",\r\n  \"price\": 19.99,\r\n  \"stock\": 100\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1000/api/getAllProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"api",
+						"getAllProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Dummy Product updated\",\r\n  \"description\": \"This is a dummy product for testing purposes.\",\r\n  \"price\": 19.99,\r\n  \"stock\": 100\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1000/api/products/65ab5084b41ccb98d6b81712",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"api",
+						"products",
+						"65ab5084b41ccb98d6b81712"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Dummy Product updated\",\r\n  \"description\": \"This is a dummy product for testing purposes.\",\r\n  \"price\": 19.99,\r\n  \"stock\": 100\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1000/api/products/65ab5084b41ccb98d6b81712",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"api",
+						"products",
+						"65ab5084b41ccb98d6b81712"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
